@@ -1,0 +1,7 @@
+##Convert UI to PY
+pyuic5 -x position_cursor_ui.ui -o position_cursor_ui.py
+
+##Convert QRC to RC
+pyrcc5 resources.qrc -o resources_rc.py
+
+##Convert PY to EXE

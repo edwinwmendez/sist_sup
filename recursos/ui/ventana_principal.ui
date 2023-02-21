@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Automatizacion - SUP</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInicio">
+    <property name="title">
+     <string>Inicio</string>
+    </property>
+    <addaction name="actionPrincipal"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuAciones">
+    <property name="title">
+     <string>Aciones</string>
+    </property>
+    <addaction name="actionRegistrar_contratos"/>
+    <addaction name="actionRegistrar_CTS"/>
+    <addaction name="actionProcesos"/>
+   </widget>
+   <widget class="QMenu" name="menuUsuarios">
+    <property name="title">
+     <string>Usuarios</string>
+    </property>
+    <addaction name="actionCrear_usuario"/>
+    <addaction name="actionAdministrar_usuarios"/>
+   </widget>
+   <widget class="QMenu" name="menuConfiguraci_n">
+    <property name="title">
+     <string>Configuración</string>
+    </property>
+    <widget class="QMenu" name="menuSUP">
+     <property name="title">
+      <string>SUP</string>
+     </property>
+     <addaction name="actionRegistrar_contratos_2"/>
+     <addaction name="actionRegistrar_CTS_2"/>
+     <addaction name="actionProcesos_2"/>
+    </widget>
+    <widget class="QMenu" name="menuACM">
+     <property name="title">
+      <string>ACM</string>
+     </property>
+     <addaction name="actionModificar_Datos"/>
+     <addaction name="actionModificar_datos"/>
+     <addaction name="actionActualizar_datos_del_trabajador"/>
+    </widget>
+    <widget class="QMenu" name="menuMCAP">
+     <property name="title">
+      <string>MCAP</string>
+     </property>
+     <addaction name="actionDestacar_LRM"/>
+     <addaction name="actionReasignar_LRM"/>
+     <addaction name="actionEncargar_LRM"/>
+     <addaction name="actionUbicar_docente_LRM"/>
+    </widget>
+    <addaction name="menuSUP"/>
+    <addaction name="menuACM"/>
+    <addaction name="menuMCAP"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionComunicarse_con_soporte_t_cnico"/>
+    <addaction name="actionManual_de_usuario"/>
+   </widget>
+   <widget class="QMenu" name="menuAcerca_de">
+    <property name="title">
+     <string>Acerca de</string>
+    </property>
+    <addaction name="actionBuscar_actualizaciones"/>
+    <addaction name="actionVersi_n"/>
+   </widget>
+   <addaction name="menuInicio"/>
+   <addaction name="menuAciones"/>
+   <addaction name="menuUsuarios"/>
+   <addaction name="menuConfiguraci_n"/>
+   <addaction name="menuAyuda"/>
+   <addaction name="menuAcerca_de"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionPrincipal">
+   <property name="text">
+    <string>Principal</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_contratos">
+   <property name="text">
+    <string>Registrar contratos</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_CTS">
+   <property name="text">
+    <string>Registrar CTS</string>
+   </property>
+  </action>
+  <action name="actionProcesos">
+   <property name="text">
+    <string>Procesos</string>
+   </property>
+  </action>
+  <action name="actionCrear_usuario">
+   <property name="text">
+    <string>Crear usuario</string>
+   </property>
+  </action>
+  <action name="actionAdministrar_usuarios">
+   <property name="text">
+    <string>Administrar usuarios</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_contratos_2">
+   <property name="text">
+    <string>Registrar contratos</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_CTS_2">
+   <property name="text">
+    <string>Registrar CTS</string>
+   </property>
+  </action>
+  <action name="actionProcesos_2">
+   <property name="text">
+    <string>Procesos</string>
+   </property>
+  </action>
+  <action name="actionModificar_Datos">
+   <property name="text">
+    <string>Agregar nuevo trabajador</string>
+   </property>
+  </action>
+  <action name="actionModificar_datos">
+   <property name="text">
+    <string>Modificar datos del trabajador</string>
+   </property>
+  </action>
+  <action name="actionActualizar_datos_del_trabajador">
+   <property name="text">
+    <string>Actualizar datos del trabajador</string>
+   </property>
+  </action>
+  <action name="actionDestacar_LRM">
+   <property name="text">
+    <string>Destacar LRM</string>
+   </property>
+  </action>
+  <action name="actionReasignar_LRM">
+   <property name="text">
+    <string>Reasignar LRM</string>
+   </property>
+  </action>
+  <action name="actionEncargar_LRM">
+   <property name="text">
+    <string>Encargar LRM</string>
+   </property>
+  </action>
+  <action name="actionUbicar_docente_LRM">
+   <property name="text">
+    <string>Ubicar docente LRM</string>
+   </property>
+  </action>
+  <action name="actionComunicarse_con_soporte_t_cnico">
+   <property name="text">
+    <string>Comunicarse con soporte técnico</string>
+   </property>
+  </action>
+  <action name="actionManual_de_usuario">
+   <property name="text">
+    <string>Manual de usuario</string>
+   </property>
+  </action>
+  <action name="actionBuscar_actualizaciones">
+   <property name="text">
+    <string>Buscar actualizaciones</string>
+   </property>
+  </action>
+  <action name="actionVersi_n">
+   <property name="text">
+    <string>Versión</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

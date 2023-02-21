@@ -1,0 +1,42 @@
+from PyQt5.QtWidgets import QMainWindow
+from vista.vista import Vista
+
+
+class Controlador:
+    def __init__(self, modelo, vista):
+        self.modelo = modelo
+        self.vista = vista
+
+        # Conectamos las señales de la vista con los métodos del controlador
+        self.vista.clicked_tab_acerca_de.connect(self.abrir_acerca_de)
+        self.vista.clicked_tab_ayuda.connect(self.abrir_ayuda)
+        self.vista.clicked_tab_configuracion.connect(self.abrir_configuracion)
+        self.vista.clicked_tab_inicio.connect(self.abrir_inicio)
+        self.vista.clicked_tab_procesos.connect(self.abrir_procesos)
+        self.vista.clicked_tab_usuarios.connect(self.abrir_usuarios)
+
+        # Aquí puedes inicializar las variables y métodos necesarios para el controlador
+        pass
+
+    def abrir_acerca_de(self):
+        self.vista.clicked_tab_acerca_de.emit()
+
+    def abrir_ayuda(self):
+        # Método para abrir la pestaña "Ayuda"
+        pass
+
+    def abrir_configuracion(self):
+        # Método para abrir la pestaña "Configuración"
+        pass
+
+    def abrir_inicio(self):
+        # Método para abrir la pestaña "Inicio"
+        pass
+
+    def abrir_procesos(self):
+        # Método para abrir la pestaña "Procesos"
+        pass
+
+    def abrir_usuarios(self):
+        # Método para abrir la pestaña "Usuarios"
+        pass

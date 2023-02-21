@@ -1,0 +1,2 @@
+class ModeloConfiguracion:
+    pass
